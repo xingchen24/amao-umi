@@ -20,7 +20,7 @@ export default defineConfig({
     // dark: true,
     compact: true,
     // babel-plugin-import
-    import: false,
+    import: true,
     // less or css, default less
     style: 'less',
     // shortcut of `configProvider.theme`

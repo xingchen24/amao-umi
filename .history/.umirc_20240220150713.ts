@@ -17,7 +17,7 @@ export default defineConfig({
   antd: {
     configProvider: {},
     // themes
-    // dark: true,
+    dark: true,
     compact: true,
     // babel-plugin-import
     import: false,

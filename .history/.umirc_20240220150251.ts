@@ -17,10 +17,10 @@ export default defineConfig({
   antd: {
     configProvider: {},
     // themes
-    // dark: true,
+    dark: true,
     compact: true,
     // babel-plugin-import
-    import: false,
+    import: true,
     // less or css, default less
     style: 'less',
     // shortcut of `configProvider.theme`
@@ -31,10 +31,10 @@ export default defineConfig({
     // Transform DayJS to MomentJS
     momentPicker: true,
     // Add StyleProvider for legacy browsers
-    // styleProvider: {
-    //   hashPriority: 'high',
-    //   legacyTransformer: true,
-    // },
+    styleProvider: {
+      hashPriority: 'high',
+      legacyTransformer: true,
+    },
   }
 });
 

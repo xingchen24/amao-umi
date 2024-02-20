@@ -7,7 +7,7 @@ export default function Test() {
   console.log("###location", location)
   return (
     <div>
-      <Button onClick={() => navigate("../", { replace: true })}>跳转首页</Button>
+      <Button onClick={() => navigate("../success", { replace: true })}>点击</Button>
     </div>
   )
 }

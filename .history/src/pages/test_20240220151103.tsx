@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "umi"
 import { Button } from "antd"
+import 'antd/dist/antd.css'
 
 export default function Test() {
   const location = useLocation()
@@ -7,7 +8,7 @@ export default function Test() {
   console.log("###location", location)
   return (
     <div>
-      <Button onClick={() => navigate("../", { replace: true })}>跳转首页</Button>
+      <Button>点击</Button>
     </div>
   )
 }
