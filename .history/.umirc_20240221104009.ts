@@ -11,7 +11,7 @@ export default defineConfig({
     { path: "/test", component: "test"},
     { path: "/*", component: "404"},
     { path: "/home", redirect: "/"},
-    { path: "/learn", component: "@/pages/learnTs/index.tsx", layout: false}
+    { path: "/learn", component: "@/pages/learnTs/index.tsx"}
   ],
   npmClient: 'npm',
   plugins: ['@umijs/plugins/dist/antd'],
