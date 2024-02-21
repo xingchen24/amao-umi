@@ -24,6 +24,9 @@ export default function Layout() {
           <Link to="/home">getHome</Link>
         </li>
         <li>
+          <Link  to="/xiayuchen">LearnXiaYuChen</Link>
+        </li>
+        <li>
           <a href="https://github.com/umijs/umi">Github</a>
         </li>
       </ul>

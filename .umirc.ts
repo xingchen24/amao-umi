@@ -2,7 +2,7 @@ import { defineConfig } from "umi";
 
 export default defineConfig({
   routes: [
-    { path: "/", component: "index", layout: false},
+    { path: "/", component: "index"},
     { path: "/docs", component: "docs",
       wrappers:[
         '@/wrappers/auth'
@@ -11,6 +11,7 @@ export default defineConfig({
     { path: "/test", component: "test"},
     { path: "/*", component: "404"},
     { path: "/home", redirect: "/"},
+    { path: "/xiayuchen", component: "@/pages/xiaYuChenLearn/index.tsx", layout: false},
     { path: "/learn", component: "@/pages/learnTs/index.tsx", layout: false}
   ],
   npmClient: 'npm',
