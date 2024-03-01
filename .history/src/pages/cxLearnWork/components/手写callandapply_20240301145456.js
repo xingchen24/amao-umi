@@ -7,13 +7,11 @@ Function.prototype.call2 = function (context) {
 }
 
 Function.prototype.call3 = function (context) {
-  let context = context || window
   context.fn = this
   let args = []
   for (let i = 1; i < arguments.length; i++) {
     args.push('arguments[' + i + ']')
   }
-  let result = eval('context.fn(' + args + ')')
+  eval('context.fn(' + args + ')')
   delete context.fn
-  return result
 }

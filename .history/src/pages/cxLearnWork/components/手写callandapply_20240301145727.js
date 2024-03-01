@@ -13,7 +13,6 @@ Function.prototype.call3 = function (context) {
   for (let i = 1; i < arguments.length; i++) {
     args.push('arguments[' + i + ']')
   }
-  let result = eval('context.fn(' + args + ')')
+  eval('context.fn(' + args + ')')
   delete context.fn
-  return result
 }
